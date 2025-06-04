@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a2d5c6, #f3f9f4);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #2a7a4f;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #4b774e;
+    font-style: italic;
+}
+
+main {
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1 1 300px;
+}
+
+section h2 {
+    color: #1e4d2b;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #76c893;
+    padding-bottom: 8px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.connection {
+    flex-basis: 100%;
+    margin-top: 30px;
+    background: #e6f0e9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.connection h2 {
+    color: #2f7a4f;
+    margin-bottom: 15px;
+}
+
+.connection p {
+    font-size: 1.1rem;
+    color: #3a5a40;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Ícones simples com CSS */
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.city-icon {
+    background: #4a90e2;
+    border-radius: 15px 15px 5px 5px;
+    position: relative;
+}
+
+.city-icon::before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+    width: 15px;
+    height: 40px;
+    background: #b0d4f1;
+    border-radius: 3px;
+    box-shadow: 25px 0 #b0d4f1, 45px 10px #b0d4f1;
+}
+
+.field-icon {
+    background: #76c893;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+}
+
+.field
