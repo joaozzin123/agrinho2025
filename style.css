@@ -48,6 +48,18 @@ main {
 
 section {
     flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
 }
 
 section h2 {
@@ -90,46 +102,19 @@ footer {
     color: #888;
 }
 
-/* Ícones simples com CSS */
-.icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
 
-.city-icon {
-    background: #4a90e2;
-    border-radius: 15px 15px 5px 5px;
-    position: relative;
-}
+    section {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
 
-.city-icon::before {
-    content: '';
-    position: absolute;
-    bottom: 15px;
-    left: 12px;
-    width: 15px;
-    height: 40px;
-    background: #b0d4f1;
-    border-radius: 3px;
-    box-shadow: 25px 0 #b0d4f1, 45px 10px #b0d4f1;
-}
-
-.field-icon {
-    background: #76c893;
-    border-radius: 50% 50% 0 0;
-    position: relative;
-}
-
-.field-icon::before {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    width: 10px;
-    height: 50px;
-    background: #4a7c42;
-    border-radius: 5px;
-    box-shadow: 25px 0 #4a7c42, 45px 10px #4a7c42;
-    transform: rotate(-10deg);
+    section img {
+        height: 180px;
+    }
 }
